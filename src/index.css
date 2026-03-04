@@ -1,0 +1,51 @@
+/* Glean design language */
+:root {
+  --glean-blue: #1E64FF;
+  --glean-blue-dark: #1451CC;
+  --glean-navy: #0A143C;
+  --glean-navy-muted: #3d4d6b;
+  --glean-bg: #ffffff;
+  --glean-border: #E8ECF5;
+  --glean-card-bg: #F8F9FC;
+  --glean-live: #0d9488;
+  --glean-no-key: #94a3b8;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--glean-navy);
+  background-color: var(--glean-bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+input, select, textarea {
+  font-family: inherit;
+}
+
+/* Typing + pulse for loading */
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
