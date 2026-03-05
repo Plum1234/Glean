@@ -9,6 +9,7 @@ import {
   ArrowRight,
   X,
 } from 'lucide-react'
+import { Analytics } from '@vercel/analytics/react'
 import './App.css'
 
 const DEAL_TYPES = ['M&A', 'IPO', 'Leveraged Buyout', 'Cross-Border Acquisition', 'Debt Restructuring']
@@ -288,6 +289,7 @@ export default function App() {
 
   return (
     <div className="app">
+      <Analytics />
       <header className="header">
         <div className="header-inner">
           <div className="logo-block">
